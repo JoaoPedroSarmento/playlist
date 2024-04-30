@@ -1,9 +1,9 @@
 <?php
     function getConexao():PDO{
-        $DSN = 'mysql:dbname=musica;host=localhost;charset=utf8';
+        $DSN = 'mysql:dbname=bg5twkjfgkncohcxq4oj;host=bg5twkjfgkncohcxq4oj-mysql.services.clever-cloud.com;charset=utf8';
 
         try{
-            $pdo = new PDO($DSN,'root','',[PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION]);
+            $pdo = new PDO($DSN,'uki0wiingu0endsh','f1J6za2UL7XR0mqVLlhe',[PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION]);
         }catch(PDOException $error){
             die("ERRO AO CONECTAR COM O BANCO DE DADOS {$error->getMessage()}");
         }
