@@ -1,0 +1,8 @@
+CREATE DATABASE Musica;
+USE Musica;
+CREATE TABLE musica (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(80) NOT NULL,
+    tipo VARCHAR(100) NOT NULL
+);
+    

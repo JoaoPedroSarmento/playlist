@@ -1,0 +1,37 @@
+/* Estilo para a tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Estilo para as células da tabela */
+table td,
+table th {
+  padding: 8px;
+  border: 1px solid #dddddd;
+}
+
+/* Estilo para as células de cabeçalho da tabela */
+table th {
+  background-color: #333333; /* Cor de fundo escura */
+  color: #ffffff; /* Cor do texto branca */
+  font-weight: bold;
+}
+
+/* Estilo para as linhas pares da tabela */
+table tr:nth-child(even) {
+  background-color: #666666; /* Cor de fundo escura */
+  color: #ffffff; /* Cor do texto branca */
+}
+
+/* Estilo para as linhas ímpares da tabela */
+table tr:nth-child(odd) {
+  background-color: #444444; /* Cor de fundo escura */
+  color: #ffffff; /* Cor do texto branca */
+}
+
+/* Estilo para células específicas da tabela */
+table td.special {
+  background-color: #ffcc00; /* Cor de destaque */
+  color: #000000; /* Cor do texto preta */
+}
