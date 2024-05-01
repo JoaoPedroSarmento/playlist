@@ -1,9 +1,9 @@
 <?php
   $env = $_ENV;
-  $dbName = $env["DB_NAME"];
-  $host = $env["HOST"];
-  $root = $env["ROOT"];
-  $senha = $env["SENHA"];
+  $dbName = $env["POSTGRES_DATABASE"];
+  $host = $env["POSTGRES_HOST"];
+  $root = $env["POSTGRES_USER"];
+  $senha = $env["POSTGRES_PASSWORD"];
 
     function getConexao():PDO{
         $DSN = "mysql:dbname=$dbName;host=$host;charset=utf8";
