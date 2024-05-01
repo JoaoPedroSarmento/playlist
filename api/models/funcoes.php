@@ -6,7 +6,7 @@
   $senha = $env["SENHA"];
 
     function getConexao():PDO{
-        $DSN = "mysql:dbname=$dbname;host=$host;charset=utf8";
+        $DSN = "mysql:dbname=$dbName;host=$host;charset=utf8";
 
         try{
             $pdo = new PDO($DSN,$root,$senha,[PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION]);
