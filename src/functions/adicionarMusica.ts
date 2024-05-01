@@ -5,7 +5,7 @@ export default async function adicionarMusica(dados: Musica): Promise<void> {
   try {
     await fazFetch(
       "POST",
-      process.env.NEXT_PUBLIC_ADICIONAR_MUSICA!,
+      process.env.NEXT_PUBLIC_ADICIONAR_MUSICA_URL!,
       dados
     ).then((dados: MusicasJson) => dados.musicas);
   } catch (error) {
